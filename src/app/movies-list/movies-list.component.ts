@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Movie } from './Movie';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-movies-list',
@@ -7,6 +8,7 @@ import { Movie } from './Movie';
   styleUrl: './movies-list.component.scss'
 })
 export class MoviesListComponent {
+  faStar = faStar;
   movies: Movie[] = [
     {
       title: "Nueve reinas",

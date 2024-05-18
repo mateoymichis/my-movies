@@ -5,9 +5,10 @@
             <div class="col-4">
                 <h4>{{movie.title}}</h4>
                 <img width="90" class="img-thumbnail" [src]="movie.image" [alt]="movie.title">
-                <p>{{movie.rating}}</p>
+                <p>{{movie.rating}} <fa-icon [icon]="faStar" class="custom-icon"></fa-icon></p>
             </div>
             <div class="col-8">
+                <app-rating [(rating)]="movie.userRating"></app-rating>
                 <p>{{movie.sinopsis}}</p>
                 <p>Año:  {{movie.year}}</p>
                 <p>Director: {{movie.director}}</p>

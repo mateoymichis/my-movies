@@ -7,6 +7,9 @@ import { MoviesListComponent } from './movies-list/movies-list.component';
 import { UserMoviesComponent } from './user-movies/user-movies.component';
 import { MymoviesMainComponent } from './mymovies-main/mymovies-main.component';
 import { MymoviesAboutComponent } from './mymovies-about/mymovies-about.component';
+import { RatingComponent } from './rating/rating.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { MymoviesAboutComponent } from './mymovies-about/mymovies-about.componen
     MoviesListComponent,
     UserMoviesComponent,
     MymoviesMainComponent,
-    MymoviesAboutComponent
+    MymoviesAboutComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
