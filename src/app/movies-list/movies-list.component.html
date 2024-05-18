@@ -1,0 +1,12 @@
+<h3>Lista de películas</h3>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let movie of movies" >
+        <img width="90" class="img-thumbnail" [src]="movie.image" [alt]="movie.title">
+        <h4>{{movie.title}}</h4>
+        <p>{{movie.rating}}</p>
+        <p>{{movie.sinopsis}}</p>
+        <p>Año:  {{movie.year}}</p>
+        <p>Director: {{movie.director}}</p>
+        <p>Duración: {{movie.duration}} minutos</p>
+    </li>
+</ul>
