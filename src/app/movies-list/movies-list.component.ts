@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Movie } from './Movie';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { MoviesUserService } from '../movies-user.service';
 
 @Component({
   selector: 'app-movies-list',
@@ -41,4 +42,12 @@ export class MoviesListComponent {
       userRating: 0
     },
   ];
+
+  constructor(
+    private userMovies: MoviesUserService 
+  ) { }
+
+  addToUserMovies(movie: Movie) {
+    this.userMovies.addToUserMovies(movie);
+  }
 }

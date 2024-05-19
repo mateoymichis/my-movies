@@ -1,1 +1,6 @@
 <h3>Mis películas</h3>
+<ul>
+    <li *ngFor="let movie of userList$ | async" >
+        {{movie.title}} - Calif. {{movie.userRating}}
+    </li>
+</ul>

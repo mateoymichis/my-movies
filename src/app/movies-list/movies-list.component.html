@@ -9,6 +9,7 @@
             </div>
             <div class="col-8">
                 <app-rating [(rating)]="movie.userRating"></app-rating>
+                <button (click)="addToUserMovies(movie)">Calificar</button>
                 <p>{{movie.sinopsis}}</p>
                 <p>Año:  {{movie.year}}</p>
                 <p>Director: {{movie.director}}</p>
