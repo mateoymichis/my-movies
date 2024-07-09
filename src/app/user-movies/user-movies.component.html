@@ -1,6 +1,7 @@
 <h3>Mis películas</h3>
-<ul>
-    <li *ngFor="let movie of userList$ | async" >
-        {{movie.title}} - Calif. {{movie.userRating}}
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let movie of userList$ | async" >
+        <h4>{{movie.title}} ({{movie.year}})</h4> 
+        <span>Mi calificación: {{movie.userRating}} &#9733;</span>
     </li>
 </ul>
