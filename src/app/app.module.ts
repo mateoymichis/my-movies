@@ -11,6 +11,7 @@ import { RatingComponent } from './rating/rating.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { StarRatingComponent } from './star-rating/star-rating.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     UserMoviesComponent,
     MymoviesMainComponent,
     MymoviesAboutComponent,
-    RatingComponent
+    RatingComponent,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,

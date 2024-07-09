@@ -1,2 +1,1 @@
-<input class="smallInput" type="number" [(ngModel)]="rating" (focusout)="updateRating()" />
-<fa-icon [icon]="faStar" class="custom-icon"></fa-icon>
+<app-star-rating [(rating)]="rating" (ratingChange)="updateRating()"></app-star-rating>
